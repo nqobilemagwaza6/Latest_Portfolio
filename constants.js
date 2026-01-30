@@ -7,7 +7,7 @@
  * 3. Update the paths below to match your filenames.
  */
 export const IMAGES = {
-  profile: './assets/profile.jpg', // Place your profile picture in assets/profile.jpg
+  profile: './assets/Nqobile Magwaza.png', // Place your profile picture in assets/profile.jpg
   project1: './assets/project1.jpg', // Place your project image in assets/project1.jpg
   project2: './assets/project2.jpg',
   project3: './assets/project3.jpg',
@@ -16,20 +16,20 @@ export const IMAGES = {
 export const PROJECTS = [
   {
     id: '1',
-    title: 'AI Campus Predictive Dashboard',
+    title: 'MediFast AI',
     description: 'A comprehensive monitoring solution for machine learning pipelines. Visualizes real-time performance metrics and requirement gathering flows for enterprise stakeholders.',
     tech: ['Python (Django)', 'PostgreSQL', 'Tailwind CSS'],
-    demoUrl: '#',
+    demoUrl: 'https://prong-wink-04231070.figma.site/',
     githubUrl: '#',
     image: IMAGES.project1
   },
   {
     id: '2',
-    title: 'Community Resource Portal',
-    description: 'Developed for Empire Partner Foundation to connect underserved communities with vital educational and infrastructure resources. Built with Spring Boot for scalability.',
-    tech: ['Java (Spring Boot)', 'MySQL', 'Bootstrap'],
-    demoUrl: '#',
-    githubUrl: '#',
+    title: 'End to End AI Solution',
+    description: 'A full-stack transport application for South Africa that allows passengers to search taxi routes and fare prices, with an admin dashboard for taxi associations to manage fares and post announcements.',
+    tech: ['Typescript', 'MySQL','Next.js', 'CSS'],
+    demoUrl: 'https://v0-taxi-compass.vercel.app/',
+    githubUrl: 'https://github.com/SpecialAgents/Taxi-Compass  ',
     image: IMAGES.project2
   },
   {

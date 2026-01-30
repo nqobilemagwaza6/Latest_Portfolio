@@ -56,7 +56,7 @@ const About = defineComponent({
     return { IMAGES };
   },
   template: `
-    <section id="about" class="py-5 bg-soft-grey">
+  <section id="about" class="py-5 bg-soft-grey">
       <div class="container py-5">
         <div class="row align-items-center g-5">
           <div class="col-lg-5 text-center">
@@ -69,10 +69,10 @@ const About = defineComponent({
             <h2 class="section-heading mb-4">Professional Biography</h2>
             <div class="glass-card p-4 p-md-5 mb-4">
               <p class="fs-5 text-muted mb-4" style="line-height: 1.8;">
-                Dynamic Software Engineer with an <strong>NQF Level 5 in Systems Development</strong>. I specialize in building scalable web applications using <strong>Python</strong> and <strong>Java</strong>, backed by deep-rooted expertise in enterprise network infrastructures.
+                Dynamic Software Engineer with an <strong>NQF Level 5 in Systems Development</strong>, specializing in building scalable full-stack applications using <strong>Python</strong> and <strong>Java</strong>. My expertise is significantly enhanced by an intensive **AI bootcamp at Capaciti**, providing deep insights into cutting-edge machine learning and data science practices.
               </p>
               <p class="fs-5 text-muted mb-0" style="line-height: 1.8;">
-                Currently at <strong>AI Campus</strong>, I lead development and maintenance projects while bridging the gap between stakeholder requirements and technical implementation. My unique blend of system knowledge and software skills allows me to approach problems with a holistic, engineering-first mindset.
+              I lead development and maintenance projects while bridging the gap between stakeholder requirements and technical implementation. My unique blend of system knowledge and software skills allows me to approach problems with a holistic, engineering-first mindset.
               </p>
             </div>
             <div class="row g-4 text-center">
