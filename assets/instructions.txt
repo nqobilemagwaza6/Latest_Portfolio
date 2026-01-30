@@ -1,0 +1,6 @@
+
+This folder is for your local images.
+To display your own images in the portfolio:
+1. Save your images in this folder.
+2. Ensure the filenames match those in 'constants.js' (e.g., profile.jpg, project1.jpg).
+3. The app will now automatically load them from here.

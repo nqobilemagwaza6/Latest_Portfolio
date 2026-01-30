@@ -1,6 +1,6 @@
 
 import { defineComponent } from 'vue';
-import { PROJECTS, SKILLS, EXPERIENCES, CERTIFICATES } from './constants.js';
+import { PROJECTS, SKILLS, EXPERIENCES, CERTIFICATES, IMAGES } from './constants.js';
 
 const Navbar = defineComponent({
   template: `
@@ -52,6 +52,9 @@ const Hero = defineComponent({
 });
 
 const About = defineComponent({
+  setup() {
+    return { IMAGES };
+  },
   template: `
     <section id="about" class="py-5 bg-soft-grey">
       <div class="container py-5">
@@ -59,7 +62,7 @@ const About = defineComponent({
           <div class="col-lg-5 text-center">
             <div class="profile-image-container mb-4">
               <div class="profile-glow"></div>
-              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" class="profile-image" alt="Nqobile Magwaza">
+              <img :src="IMAGES.profile" class="profile-image" alt="Nqobile Magwaza">
             </div>
           </div>
           <div class="col-lg-7">
@@ -142,7 +145,7 @@ const Projects = defineComponent({
   template: `
     <section id="projects" class="py-5 bg-white">
       <div class="container py-5 text-center">
-        <h2 class="section-heading mb-5">Projects</h2>
+        <h2 class="section-heading mb-5">Featured Projects</h2>
         <div class="row g-4 text-start">
           <div v-for="project in PROJECTS" :key="project.id" class="col-lg-4 col-md-6">
             <div class="glass-card h-100 d-flex flex-column overflow-hidden shadow-sm">
@@ -151,7 +154,7 @@ const Projects = defineComponent({
               </div>
               <div class="p-4 d-flex flex-column flex-grow-1">
                 <h4 class="fw-bold text-dark mb-3">{{ project.title }}</h4>
-                <p class="text-muted small flex-grow-1" style="line-height: 1.6;">{{ project.description }}</p>
+                <p class="text-muted mb-4 small flex-grow-1" style="line-height: 1.6;">{{ project.description }}</p>
                 <div class="d-flex flex-wrap gap-2 mb-4">
                   <span v-for="t in project.tech" class="badge bg-light text-muted border py-2 px-3">{{ t }}</span>
                 </div>
@@ -283,7 +286,7 @@ export default defineComponent({
     <div class="portfolio-container">
       <Navbar />
       <main>
-       
+        <Hero />
         <About />
         <Skills />
         <Projects />

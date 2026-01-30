@@ -1,22 +1,36 @@
 
+/**
+ * IMAGES CONFIGURATION
+ * To use your own images:
+ * 1. Create a folder named 'assets' in your project root.
+ * 2. Place your image files (e.g., profile.jpg, project1.jpg) inside that folder.
+ * 3. Update the paths below to match your filenames.
+ */
+export const IMAGES = {
+  profile: './assets/profile.jpg', // Place your profile picture in assets/profile.jpg
+  project1: './assets/project1.jpg', // Place your project image in assets/project1.jpg
+  project2: './assets/project2.jpg',
+  project3: './assets/project3.jpg',
+};
+
 export const PROJECTS = [
   {
     id: '1',
-    title: 'ResumeBuilder',
+    title: 'AI Campus Predictive Dashboard',
     description: 'A comprehensive monitoring solution for machine learning pipelines. Visualizes real-time performance metrics and requirement gathering flows for enterprise stakeholders.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Gemini API'],
-    demoUrl: 'https://resume-builder-zeta-peach.vercel.app/',
-    githubUrl: 'https://github.com/SpecialAgents/ResumeBuilder',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop'
+    tech: ['Python (Django)', 'PostgreSQL', 'Tailwind CSS'],
+    demoUrl: '#',
+    githubUrl: '#',
+    image: IMAGES.project1
   },
   {
     id: '2',
     title: 'Community Resource Portal',
     description: 'Developed for Empire Partner Foundation to connect underserved communities with vital educational and infrastructure resources. Built with Spring Boot for scalability.',
     tech: ['Java (Spring Boot)', 'MySQL', 'Bootstrap'],
-    demoUrl: 'https://prong-wink-04231070.figma.site/',
-    // githubUrl: '#',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop'
+    demoUrl: '#',
+    githubUrl: '#',
+    image: IMAGES.project2
   },
   {
     id: '3',
@@ -25,34 +39,7 @@ export const PROJECTS = [
     tech: ['C#', 'SQL Server', 'Network Protocols'],
     demoUrl: '#',
     githubUrl: '#',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=80&w=800&auto=format&fit=crop'
-  },
-  {
-    id: '4',
-    title: 'Corporate Network Monitor',
-    description: 'A systems-level tool designed to audit and monitor internal network stability. Features automated alerts and connectivity performance logging for IT infrastructure teams.',
-    tech: ['C#', 'SQL Server', 'Network Protocols'],
-    demoUrl: '#',
-    githubUrl: '#',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop'
-  },
-  {
-    id: '5',
-    title: 'Corporate Network Monitor',
-    description: 'A systems-level tool designed to audit and monitor internal network stability. Features automated alerts and connectivity performance logging for IT infrastructure teams.',
-    tech: ['C#', 'SQL Server', 'Network Protocols'],
-    demoUrl: '#',
-    githubUrl: '#',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop'
-  },
-  {
-    id: '6',
-    title: 'Corporate Network Monitor',
-    description: 'A systems-level tool designed to audit and monitor internal network stability. Features automated alerts and connectivity performance logging for IT infrastructure teams.',
-    tech: ['C#', 'SQL Server', 'Network Protocols'],
-    demoUrl: '#',
-    githubUrl: '#',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop'
+    image: IMAGES.project3
   }
 ];
 
