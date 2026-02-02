@@ -84,13 +84,13 @@ const About = defineComponent({
               </div>
               <div class="col-6 col-md-3">
                 <div class="glass-card p-3">
-                  <h3 class="fw-bold mb-0">5+</h3>
+                  <h3 class="fw-bold mb-0">2+</h3>
                   <small class="text-muted">Years Tech</small>
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="glass-card p-3">
-                  <h3 class="fw-bold mb-0">3+</h3>
+                  <h3 class="fw-bold mb-0">5+</h3>
                   <small class="text-muted">Core Langs</small>
                 </div>
               </div>
@@ -286,7 +286,6 @@ export default defineComponent({
     <div class="portfolio-container">
       <Navbar />
       <main>
-        <Hero />
         <About />
         <Skills />
         <Projects />

@@ -8,16 +8,16 @@
  */
 export const IMAGES = {
   profile: './assets/Nqobile Magwaza.png', // Place your profile picture in assets/profile.jpg
-  project1: './assets/project1.jpg', // Place your project image in assets/project1.jpg
-  project2: './assets/project2.jpg',
+  project1: './assets/medifast.jpg', // Place your project image in assets/project1.jpg
+  project2: './assets/taxi_compass.jfif',
   project3: './assets/project3.jpg',
 };
 
 export const PROJECTS = [
   {
     id: '1',
-    title: 'MediFast AI',
-    description: 'A comprehensive monitoring solution for machine learning pipelines. Visualizes real-time performance metrics and requirement gathering flows for enterprise stakeholders.',
+    title: 'MediFast AI: Smart Patient Identification & Data Access Platform',
+    description: 'MediFast AI: Smart Patient Identification & Data Access Platform',
     tech: ['Python (Django)', 'PostgreSQL', 'Tailwind CSS'],
     demoUrl: 'https://prong-wink-04231070.figma.site/',
     githubUrl: '#',
@@ -44,57 +44,80 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = [
-  { name: 'Python (Django)', level: 5, category: 'Languages' },
-  { name: 'Java (Spring Boot)', level: 4, category: 'Languages' },
-  { name: 'Javascript / Vue.js', level: 4, category: 'Web' },
-  { name: 'MySQL / PostgreSQL', level: 4, category: 'Database' },
-  { name: 'MCSA Windows Server', level: 5, category: 'Systems' },
-  { name: 'Network Infrastructure', level: 4, category: 'Networking' },
-  { name: 'Bootstrap & CSS', level: 5, category: 'Web' },
-  { name: 'REST API Design', level: 4, category: 'Development' },
+  // --- Languages ---
+  { name: 'Python', level: 5, category: 'Languages' },
+  { name: 'JavaScript', level: 4, category: 'Languages' },
+  { name: 'HTML5', level: 5, category: 'Languages' },
+  { name: 'CSS3', level: 5, category: 'Languages' },
+  { name: 'Java', level: 4, category: 'Languages' },
+  // --- Frameworks & Libraries ---
+  { name: 'Django', level: 5, category: 'Frameworks & Libraries' },
+  { name: 'Django REST Framework', level: 4, category: 'Frameworks & Libraries' },
+  { name: 'Vue.js', level: 4, category: 'Frameworks & Libraries' },
+  { name: 'Spring Boot', level: 4, category: 'Frameworks & Libraries' },
+  { name: 'Bootstrap', level: 4, category: 'Frameworks & Libraries' },
+  // --- Databases ---
+  { name: 'PostgreSQL', level: 4, category: 'Databases' },
+  { name: 'MySQL', level: 3, category: 'Databases' },
+  // --- Cloud & DevOps ---
+  { name: 'Docker', level: 1, category: 'Cloud & DevOps' },
+  // --- API & Integration ---
+  { name: 'REST API Design & Development', level: 4, category: 'API & Integration' },
+  { name: 'AJAX', level: 4, category: 'API & Integration' },
+  { name: 'Payment Integration', level: 4, category: 'API & Integration' },
+  { name: 'OAuth2', level: 3, category: 'API & Integration' },
+  // --- Development Practices ---
+  { name: 'Agile Methodologies', level: 4, category: 'Development Practices' },
+  { name: 'Requirements Analysis', level: 4, category: 'Development Practices' },
+  { name: 'Code Review', level: 4, category: 'Development Practices' },
+  { name: 'Technical Documentation', level: 3, category: 'Development Practices' },
+  { name: 'System Design', level: 4, category: 'Development Practices' },
+  // --- Soft Skills ---
+  { name: 'Stakeholder Management', level: 4, category: 'Soft Skills' },
 ];
 
 export const EXPERIENCES = [
   {
     company: 'AI Campus',
     role: 'Junior Software Engineer',
-    period: 'Aug 2024 – Present',
+    period: 'Aug 2024 – Sept 2025',
     description: [
-      'Leading end-to-end development, deployment, and system maintenance.',
-      'Gathering and translating stakeholder requirements into technical specifications.',
-      'Presenting regular software demos and technical deep-dives to senior management.'
+    'Spearheaded full-stack development, including responsive front-ends with Vue.js/HTML/CSS/JS (AJAX) and robust back-ends with Django/Python (REST APIs).',
+    'Actively involved in requirements gathering, code reviews, and documentation to deliver scalable, secure solutions with integrated payment systems, managing **PostgreSQL databases**.',
+    'Operating within Agile methodologies.'
     ],
-    skills: ['Python', 'Django', 'Stakeholder Management', 'System Design']
+    skills: ['Python', 'Django', 'Vue.js', 'PostgreSQL', 'REST APIs',
+    'Agile', 'Full-Stack Development', 'Payment Integration',
+    'Requirements Analysis', 'Code Review', 'Technical Documentation']
   },
   {
     company: 'Empire Partner Foundation',
     role: 'Software Engineer Intern',
     period: 'Jun 2023 – May 2024',
     description: [
-      'Engineered full-stack features using Java and Spring Boot for community portals.',
-      'Optimized legacy SQL queries resulting in 20% faster page load times.',
-      'Modernized frontend components using responsive Bootstrap 5 frameworks.'
+      'Engineered and deployed full-stack features for community portals, ensuring seamless integration of front-end and back-end components.',
+      'Designed and implemented responsive user interfaces using HTML, CSS, and Bootstrap, with interactive elements developed using JavaScript and jQuery.',
+      'Developed server-side applications and RESTful APIs with Python and Django, including database design and optimization in MySQL via Django ORM.',
+      'Optimized legacy SQL queries, enhancing page load times by 20% and improving overall application performance.',
+      'Ensured cross-browser compatibility and responsiveness across web applications, and contributed to maintaining code quality through Git version control.'
     ],
-    skills: ['Java', 'Spring Boot', 'MySQL', 'Agile']
+    skills: ['Python', 'Django', 'MySQL', 'Agile']
   },
-  {
-    company: 'MegaTraining',
-    role: 'IT Support Technician Intern',
-    period: 'Feb 2017 – Dec 2017',
-    description: [
-      'Administered Windows Server environments and resolved hardware/software bottlenecks.',
-      'Configured secure network access points and internal routing protocols.',
-      'Maintained 99.9% system uptime through proactive troubleshooting and documentation.'
-    ],
-    skills: ['MCSA', 'Networking', 'Troubleshooting', 'Infrastructure']
-  }
+{
+  company: 'Capaciti',
+  role: 'AI Bootcamp',
+  period: 'Nov 2025 – Feb 2026',
+  description: [
+    'Engaged in hands-on AI projects, applying machine learning and deep learning techniques to real-world problems.',
+    'Developed and delivered technical presentations, articulating complex AI concepts and project outcomes to peers and mentors.',
+    'Completed a series of specialized Coursera courses, enhancing theoretical understanding and practical skills in various AI domains.'
+  ],
+  skills: ['AI', 'Machine Learning', 'Deep Learning', 'Presentation Skills', 'Data Analysis']
+}
 ];
 
 export const CERTIFICATES = [
   { name: 'NQF Level 5 in Systems Development', issuer: 'WeThinkCode', year: '2022' },
   { name: 'Certificate in Network Support', issuer: 'MegaTraining', year: '2016' },
-  { name: 'CompTIA A+', issuer: 'CompTIA', year: '2016' },
-  { name: 'CompTIA N+', issuer: 'CompTIA', year: '2016' },
-  { name: 'MCSA: Windows Server 2012', issuer: 'Microsoft', year: '2016' },
-  { name: 'Advanced Java Development', issuer: 'Coursera/Oracle', year: '2023' },
+  { name: 'Artificial Intelligent', issuer: 'Capaciti(Cousera)', year: '2026' },
 ];
